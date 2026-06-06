@@ -1,0 +1,2 @@
+Main-Class: VehicleRentalAppFull
+Class-Path: 1dae76fb-d8e5-4d11-aeae-7879caa62861.jar
