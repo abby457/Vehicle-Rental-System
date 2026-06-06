@@ -7,16 +7,13 @@ A Java Swing desktop application for managing vehicle rentals with two role-base
 ## 📸 Screenshots
 
 ### Login Screen
-
-(screenshots/login.png)
+![Login Screen](screenshots/login.png)
 
 ### Admin Dashboard
-
-(screenshots/admin-dashboard.png)
+![Admin Dashboard](screenshots/admin-dashboard.png)
 
 ### Customer Dashboard
-
-(screenshots/customer-dashboard.png)
+![Customer Dashboard](screenshots/customer-dashboard.png)
 
 ---
 
