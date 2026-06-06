@@ -1,28 +1,49 @@
-# Vehicle Rental App
+# 🚗 Vehicle Rental System
 
-This project is a refactored and upgraded version of the original single-file Swing vehicle rental application.
+A Java-based Vehicle Rental Management System that allows customers to browse and rent vehicles while providing administrators with complete control over vehicle inventory, bookings, user management, and rental approvals.
 
-## Build and run
+## Features
 
-Requirements:
-- Java 17 or newer
-- Maven
+### Admin
 
-Build:
+* Add, view, and delete vehicles
+* Approve or reject booking requests
+* Track returned vehicles
+* Manage users
+* View rental orders
+* Handle password reset requests
+
+### Customer
+
+* Browse available vehicles
+* Place rental orders
+* View order history
+* Receive notifications
+
+## Tech Stack
+
+* Java
+* Maven
+* SQLite
+* JDBC
+
+## Build & Run
+
 ```bash
 mvn clean package
-```
-
-Run:
-```bash
 java -jar target/vehicle-rental-app-1.0.0.jar
 ```
 
-## What changed
+## Screenshots
 
-- Maven-based project structure
-- Modular persistence layer with SQLite repository classes
-- Service layer with business rules for booking and returning vehicles
-- Strongly typed domain model using Java records and enum status
-- Improved UI structure and input validation
-- Executable shaded JAR for easy distribution
+* Login Screen
+* Admin Dashboard
+* Customer Dashboard
+
+## Future Enhancements
+
+* Online payment integration
+* Vehicle image uploads
+* Email notifications
+* Analytics and reporting
+* Advanced vehicle search and filtering
