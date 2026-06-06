@@ -113,6 +113,3 @@ Customer Views Status
 
 ---
 
-## 📄 License
-
-MIT License
