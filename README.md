@@ -1,49 +1,118 @@
 # 🚗 Vehicle Rental System
 
-A Java-based Vehicle Rental Management System that allows customers to browse and rent vehicles while providing administrators with complete control over vehicle inventory, bookings, user management, and rental approvals.
+A Java Swing desktop application for managing vehicle rentals with two role-based portals — **Admin** and **Customer** — backed by a local SQLite database.
 
-## Features
+---
 
-### Admin
+## 📸 Screenshots
 
-* Add, view, and delete vehicles
-* Approve or reject booking requests
-* Track returned vehicles
+### Login Screen
+
+(Add screenshot here)
+
+### Admin Dashboard
+
+(Add screenshot here)
+
+### Customer Dashboard
+
+(Add screenshot here)
+
+---
+
+## ✨ Features
+
+### 🛠 Admin
+
+* Add, view, and delete vehicles from the fleet
+* Approve or reject customer booking requests
+* Mark vehicles as returned and free them back up
+* View all orders (Pending / Approved / Rejected)
 * Manage users
-* View rental orders
 * Handle password reset requests
 
-### Customer
+### 👤 Customer
 
-* Browse available vehicles
-* Place rental orders
-* View order history
-* Receive notifications
+* Browse available vehicles with live name & price filters
+* Place rental orders directly from the vehicle list
+* Track personal orders and their status
+* Receive notifications when orders are approved or rejected
+* Request password resets
 
-## Tech Stack
+---
 
-* Java
-* Maven
+## 🗃️ Database Schema
+
+| Table              | Purpose                                  |
+| ------------------ | ---------------------------------------- |
+| users              | Admin and customer accounts              |
+| vehicles           | Fleet inventory with availability status |
+| orders             | Customer rental requests                 |
+| bookings           | Confirmed rentals                        |
+| notifications      | Customer notifications                   |
+| pwd_reset_requests | Password reset requests                  |
+
+---
+
+## 🔐 Default Credentials
+
+| Role     | Username | Password |
+| -------- | -------- | -------- |
+| Admin    | admin    | admin123 |
+| Customer | customer | cust123  |
+
+Additional seeded accounts:
+
+* alice / alice123
+* bob / bob123
+* sara / sara123
+
+---
+
+## 🧰 Tech Stack
+
+* Java 17+
+* Java Swing
 * SQLite
 * JDBC
+* Maven
 
-## Build & Run
+---
+
+## 🚀 Build & Run
 
 ```bash
 mvn clean package
 java -jar target/vehicle-rental-app-1.0.0.jar
 ```
 
-## Screenshots
+---
 
-* Login Screen
-* Admin Dashboard
-* Customer Dashboard
+## 🔄 Workflow
 
-## Future Enhancements
+```text
+Customer → Places Order
+        ↓
+Admin → Approves / Rejects
+        ↓
+Notification Sent
+        ↓
+Customer Views Status
+```
+
+---
+
+## 🔮 Future Enhancements
 
 * Online payment integration
 * Vehicle image uploads
 * Email notifications
-* Analytics and reporting
-* Advanced vehicle search and filtering
+* Analytics dashboard
+* Advanced search and filtering
+* Password hashing (bcrypt)
+
+---
+
+## 📄 License
+
+MIT License
